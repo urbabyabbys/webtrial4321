@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheishar Abdil Adzani | Portfolio</title>
+    <meta name="description"
+        content="Portfolio Cheishar Abdil Adzani - Web Developer & Designer dengan Claymorphism UI interaktif.">
+    <meta name="author" content="Cheishar Abdil Adzani">
+    <link rel="icon" type="image/png" href="asset/image/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="asset/js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+
+        <nav>
+            <a href="#home" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+            <a href="#about" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                About
+            </a>
+            <a href="#project" class="nav-item">
+                <i class="fa-solid fa-folder-open"></i>
+                Project
+            </a>
+
+            <a href="#contact" class="nav-item">
+                <i class="fa-solid fa-diagram-project"></i>
+                Contact
+            </a>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <section id="home">
+            <canvas id="matrixCanvas"></canvas>
+            <div class="portfolio-hero">
+                <h1 class="portfolio-title bubble-text">
+                    Cheishar Abdil Adzani
+                </h1>
+
+                <div class="character-wrapper">
+                    <!-- Beri id pada gambar utama agar bisa diubah dengan JS -->
+                    <img src="asset/image/char-center.png" alt="Character" class="character-img" id="characterImg">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="lanyard-container">
+                    <!-- Gunakan ID draggableLanyard untuk script -->
+                    <img src="asset/image/lanyard.png" alt="Lanyard ID" class="lanyard-img" id="draggableLanyard">
+                </div>
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 id="typing-text">Hi, I'm Cheishar Abdil Adzani</h2>
+
+                        <p>A passionate creative focusing on modern web design, claymorphism, and dynamic interactive
+                            experiences.</p>
+
+                    </div>
+                    <div class="about-grid">
+                        <div class="grid-column">
+                            <h3>EXPERIENCE</h3>
+                            <hr class="col-hr">
+                            <ul class="experience-list">
+                                <li><span>Dosen IT</span></li>
+                                <li><span>Lead Developer</span></li>
+                                <li><span>Senior Web Developer</span></li>
+                            </ul>
+                        </div>
+                        <div class="grid-column">
+                            <h3>EDUCATION</h3>
+                            <hr class="col-hr">
+                            <ul class="experience-list">
+                                <li><span>S1 - Universitas Pelita Harapan</span></li>
+                                <li><span>S2 - Universitas Indonesia</span></li>
+                                <li><span>S3 - Asia Pacific University</span></li>
+                            </ul>
+                        </div>
+                        <div class="grid-column right-column">
+                            <h3>CONTACT</h3>
+                            <hr class="col-hr">
+                            <div class="contact-icons">
+                                <a href="#" class="icon-box" aria-label="Behance"><i
+                                        class="fa-brands fa-behance"></i></a>
+                                <a href="#" class="icon-box" aria-label="LinkedIn"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="icon-box" aria-label="Email"><i
+                                        class="fa-regular fa-envelope"></i></a>
+                                <a href="#" class="icon-box" aria-label="Blog"><i class="fa-solid fa-pen"></i></a>
+                            </div>
+                            <hr class="col-hr">
+                            <h3>TOOLS</h3>
+                            <div class="tools-icons">
+                                <div class="tool-box"><i class="fa-solid fa-square"></i></div>
+                                <div class="tool-box"><i class="fa-solid fa-heart"></i></div>
+                                <div class="tool-box"><i class="fa-solid fa-heart"></i></div>
+                                <div class="tool-box"><i class="fa-solid fa-caret-left"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="project-header">
+                <hr class="header-line">
+                <h2>PROJECTS</h2>
+                <hr class="header-line">
+            </div>
+
+            <div class="slider-container">
+                <button type="button" class="slider-btn prev-btn" id="sliderPrevBtn" aria-label="Previous Project">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="slider-wrapper">
+                    <div class="project-card">
+                        <div class="card-number">01</div>
+                        <div class="card-img-placeholder">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3>Project 1</h3>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-number">02</div>
+                        <div class="card-img-placeholder">
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                        </div>
+                        <h3>Project 2</h3>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-number">03</div>
+                        <div class="card-img-placeholder">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3>Project 3</h3>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-number">04</div>
+                        <div class="card-img-placeholder">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3>Project 4</h3>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-number">05</div>
+                        <div class="card-img-placeholder">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3>Project 5</h3>
+                    </div>
+                </div>
+                <button type="button" class="slider-btn next-btn" id="sliderNextBtn" aria-label="Next Project">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="cta-envelope-wrapper">
+                <div class="cta-envelope-back"></div>
+                <div class="cta-letter">
+                    <h2>Let's Work Together!</h2>
+                    <p>Have a project in mind, need a developer, or just want to discuss some cool ideas? I'm always
+                        open to new opportunities.</p>
+                    <a href="mailto:abdiladzani@example.com" class="cta-btn">Send Me an Email</a>
+                </div>
+                <div class="cta-pocket"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">
+            &copy; 2026 Cheishar Abdil Adzani. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Container -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content" id="modalImageContainer"></div>
+    </div>
+</body>
+
+</html>
